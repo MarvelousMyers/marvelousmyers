@@ -37,10 +37,18 @@ page '/*.txt', layout: false
 #   end
 # end
 
+# Middleman-deploy configuration
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch = 'gh-pages'
+  deploy.build_before = true
+end
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
+configure :build do
 #   activate :minify_css
 #   activate :minify_javascript
-# end
+  activate :relative_assets
+end
