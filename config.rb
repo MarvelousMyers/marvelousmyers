@@ -49,7 +49,7 @@ page '/*.txt', layout: false
 #   end
 # end
 
-activate :relative_assets
+# activate :relative_assets
 
 # Middleman-deploy configuration
 activate :deploy do |deploy|
