@@ -1,3 +1,5 @@
+@import "bootstrap.css";
+
 @font-face {
   font-family: "Soria";
   src: url("../fonts/soria-font.ttf");
@@ -6,9 +8,15 @@
 body {
   background-color: white;
   color: #333;
-  font-family: "Soria";
-  padding: 18vh 1rem;
   text-align: center;
+}
+
+.soria {
+  font-family: "Soria";
+}
+
+.header {
+  margin-top: 2em;
 }
 
 a {
